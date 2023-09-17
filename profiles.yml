@@ -1,0 +1,9 @@
+soccer_538:
+    target: dev
+    outputs:
+        dev:
+          type: databricks
+          schema: default
+          host: "{{ env_var('databricks_host') }}"
+          http_path: sql/protocolv1/o/5423865500093/0917-144207-wi1wdiwl
+          token: "{{ env_var('databricks_token') }}"
